@@ -29,6 +29,10 @@ $(document).ready(function() {
 </body>
 ```
 
+### Things to keep in consideration while using scaling feature 
+- If you are using positions from mouse events (event.pageX or event.pageY) then it has to use the scaling factor with it.
+- Drag & Drop will not going to work as per the expectation. Need to apply scale factor.
+
 Thank you for stop by this plugin. If you have any queries or doubts the feel free to create issue here. 
 
 At the end, let me know your feedback about the plugin. :)

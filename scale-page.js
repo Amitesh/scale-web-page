@@ -209,9 +209,20 @@
                 scalingContainer.css('min-width', baseWidth);
                 scalingContainer.css('min-height', baseHeight);
 
+                // Set the scaling factor to the element.
+                scalingContainer.data('scale-factor', scaleTo);
+
                 if(scaleBy == 'best-fit' || scaleBy == 'height'){
                     this.setCenterPosition();
                 }
+            },
+
+            /**
+             * An Api to get the current scale factor
+             * @return {[type]} [description]
+             */
+            getScaleFactor: function(){
+                return scaleTo;
             },
 
             keepOriginal: function(){
