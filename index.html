@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html ng-app="spelloApp" ng-strict-di lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app="spelloApp" ng-strict-di lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app="spelloApp" ng-strict-di lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+    <head>
+        <title>Scale the page content</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"> -->
+        <meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="author" content="Amitesh Kumar">
+        <meta name="description" content="">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scale-page.js" type="text/javascript" charset="utf-8"></script>
+
+        <link rel="stylesheet" type="text/css" href="scale-page.css">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var scalePage = new ScalePage({
+                    baseWidth: 500,
+                    baseHeight: 400,
+                    scaleBy: 'best-fit',
+                    container: 'body',
+                    position: 'center',
+                    scaleContentFor: 'all-screen',
+                    containerToPosition: '.container',
+                    showInfo: true
+                });
+                scalePage.init();
+            });
+        
+        </script>
+
+        <style type="text/css" media="screen">
+        </style>
+
+    </head>
+
+    <body class="scale-container">
+        <div class="container">
+            <div class='scale-info1'></div>
+        </div>
+    </body>
+</html>
