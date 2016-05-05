@@ -28,6 +28,8 @@ $(document).ready(function() {
   <div class="container"></div>
 </body>
 ```
+### TODO
+- Add limit to for minimum scaling on lower screen devices. It should not scale less than the given sizes.
 
 ### Things to keep in consideration while using scaling feature 
 - If you are using positions from mouse events (event.pageX or event.pageY) then it has to use the scaling factor with it.
